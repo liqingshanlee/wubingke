@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.smartydroid.android.starter.kit.widget.ForegroundRelativeLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:fresco="http://schemas.android.com/apk/res-auto"
+		xmlns:tools="http://schemas.android.com/tools"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:foreground="?attr/selectableItemBackground"
+>
+
+	<com.facebook.drawee.view.SimpleDraweeView
+			android:id="@+id/focus_simple"
+			android:layout_width="@dimen/simple_detail_height"
+			android:layout_height="@dimen/simple_detail_height"
+			android:layout_alignParentLeft="true"
+			android:layout_centerVertical="true"
+			android:paddingBottom="@dimen/view_margin_8"
+			android:paddingLeft="@dimen/view_padding_16"
+			android:paddingStart="@dimen/view_padding_16"
+			android:paddingTop="@dimen/view_margin_8"
+			fresco:placeholderImage="@mipmap/ic_information"
+			fresco:placeholderImageScaleType="centerCrop"
+			fresco:roundAsCircle="true"
+			tools:ignore="RtlHardcoded,RtlSymmetry"
+	/>
+
+	<RelativeLayout android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:layout_marginLeft="@dimen/view_margin_16"
+			android:layout_toRightOf="@+id/focus_simple">
+
+		<TextView
+				android:id="@+id/focus_username"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textColor="@color/black"
+				android:textSize="@dimen/text_size_18"/>
+
+		<ImageView
+				android:layout_marginLeft="@dimen/view_margin_8"
+				android:id="@+id/focus_sex"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_toRightOf="@+id/focus_username"
+				android:contentDescription="@string/account_helps"/>
+
+		<TextView
+				android:id="@+id/focus_content"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/focus_username"/>
+	</RelativeLayout>
+
+
+</com.smartydroid.android.starter.kit.widget.ForegroundRelativeLayout>

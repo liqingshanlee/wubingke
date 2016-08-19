@@ -1,0 +1,63 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+  repositories {
+    jcenter()
+    mavenCentral()
+  }
+  dependencies {
+    classpath 'com.android.tools.build:gradle:2.1.2'
+
+    // NOTE: Do not place your application dependencies here; they belong
+    // in the individual module build.gradle files
+  }
+  //Android 6.0基于注解的runtime permission
+}
+
+allprojects {
+  repositories {
+    jcenter()
+    maven { url "https://jitpack.io" }
+    //这里是 LeanCloud 的包仓库
+    maven {
+      url "http://mvn.leancloud.cn/nexus/content/repositories/releases"
+    }
+    //BugHd
+    maven {
+      url "http://maven.bughd.com/public"
+    }
+  }
+}
+
+task clean(type: Delete) {
+  delete rootProject.buildDir
+}
+
+/*
+Shared gradle properties
+ */
+ext {
+  // compileSdkVersion = 'android-N'
+  applicationId = 'tech.honc.android.apps.soldier'
+  //  applicationId = 'tech.honc.android.apps.soldier.debug'
+  versionCode = 1
+  versionName = '1.0'
+
+  compileSdkVersion = 23
+  buildToolsVersion = "23.0.3"
+
+  minSdkVersion = 15
+  targetSdkVersion = 22
+
+  supportVersion = '23.3.0'
+
+  deps = [supportV4         : ('com.android.support:support-v4:' + supportVersion),
+          supportAnnotations: ('com.android.support:support-annotations:' + supportVersion),
+          appcompatV7       : ('com.android.support:appcompat-v7:' + supportVersion),
+          supportDesign     : ('com.android.support:design:' + supportVersion),
+          gridlayoutV7      : ('com.android.support:gridlayout-v7:' + supportVersion),
+          recyclerviewV7    : ('com.android.support:recyclerview-v7:' + supportVersion),
+          cardviewV7        : ('com.android.support:cardview-v7:' + supportVersion)
+
+  ]
+}

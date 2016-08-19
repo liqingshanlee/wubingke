@@ -1,0 +1,79 @@
+<resources>
+  <!-- Default screen margins, per the Android Design guidelines. -->
+  <dimen name="activity_horizontal_margin">16dp</dimen>
+  <dimen name="activity_vertical_margin">16dp</dimen>
+
+  <!--whole_text_size-->
+  <dimen name="text_size_11">11sp</dimen>
+  <dimen name="text_size_12">12sp</dimen>
+  <dimen name="text_size_13">13sp</dimen>
+  <dimen name="text_size_14">14sp</dimen>
+  <dimen name="text_size_15">15sp</dimen>
+  <dimen name="text_size_16">16sp</dimen>
+  <dimen name="text_size_17">17sp</dimen>
+  <dimen name="text_size_18">18sp</dimen>
+  <dimen name="text_size_19">19sp</dimen>
+  <dimen name="text_size_20">20sp</dimen>
+  <dimen name="text_size_22">22sp</dimen>
+
+  <!--whole_padding-->
+  <dimen name="view_padding_2">2dp</dimen>
+  <dimen name="view_padding_4">4dp</dimen>
+  <dimen name="view_padding_8">8dp</dimen>
+  <dimen name="view_padding_16">16dp</dimen>
+  <dimen name="view_padding_20">20dp</dimen>
+  <dimen name="view_padding_28">28dp</dimen>
+  <dimen name="view_padding_36">36dp</dimen>
+
+  <!--whole_margin-->
+  <dimen name="view_margin_2">2dp</dimen>
+  <dimen name="view_margin_4">4dp</dimen>
+  <dimen name="view_margin_8">8dp</dimen>
+  <dimen name="view_margin_16">16dp</dimen>
+  <dimen name="view_margin_20">20dp</dimen>
+  <dimen name="view_margin_24">24dp</dimen>
+  <dimen name="view_margin_30">30dp</dimen>
+  <dimen name="view_margin_28">28dp</dimen>
+  <dimen name="view_margin_40">40dp</dimen>
+  <dimen name="view_margin_44">44dp</dimen>
+  <dimen name="view_margin_52">52dp</dimen>
+
+  <!--HomeFragment-->
+  <dimen name="simple_home_width">80dp</dimen>
+  <dimen name="simple_home_height">80dp</dimen>
+
+
+  <!--MaleSoldierFragment-->
+  <dimen name="simple_soldier_width">120dp</dimen>
+  <dimen name="simple_soldier_height">120dp</dimen>
+  <dimen name="solider_home_min_height">40dp</dimen>
+  <!--SoldierDetailFragment-->
+  <dimen name="simple_detail_width">80dp</dimen>
+  <dimen name="simple_detail_height">80dp</dimen>
+  <dimen name="photo_thumbnail_size">80dp</dimen>
+  <dimen name="span_size">4dp</dimen>
+  <dimen name="photo_user_avatar_size">56dp</dimen>
+  <!--filterFragment-->
+  <dimen name="filter_min_height">40dp</dimen>
+
+
+  <!--ReleaseActivity/ReleaseHelpActivity-->
+  <dimen name="edit_content_height">120dp</dimen>
+
+  <!--InformationFragment-->
+  <dimen name="simple_image">160dp</dimen>
+
+  <!--DynamicDetailsFragment-->
+  <dimen name="simple_dynanic_width">60dp</dimen>
+  <dimen name="simple_dynamic_height">60dp</dimen>
+  <dimen name="comment_margin">50dp</dimen>
+
+  <dimen name="simple_info">50dp</dimen>
+  <dimen name="title_bar_height">56dip</dimen>
+  <dimen name="hint_text_view_height">40dip</dimen>
+  <dimen name="common_safe_margin">12dp</dimen>
+  <dimen name="setting_item_height">44dp</dimen>
+  <dimen name="more_item_height">44dp</dimen>
+  <dimen name="common_two_safe_margin">24dp</dimen>
+
+</resources>

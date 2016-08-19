@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+  <!--移除搜索群-->
+  <!--<item-->
+  <!--android:id="@+id/action_search_tribe"-->
+  <!--android:title="@string/action_search_tribe"-->
+  <!--app:showAsAction="never"-->
+  <!--/>-->
+  <item
+      android:id="@+id/action_create_tribe"
+      android:icon="@drawable/ic_group_add_white_24dp"
+      android:title="@string/action_create_tribe"
+      app:showAsAction="always"
+      />
+  <!--todo:移除创建讨论组-->
+  <!--<item-->
+  <!--android:id="@+id/action_create_discuss"-->
+  <!--android:title="@string/action_create_discuss"-->
+  <!--app:showAsAction="never"-->
+  <!--/>-->
+</menu>

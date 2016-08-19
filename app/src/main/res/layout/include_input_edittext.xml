@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:paddingBottom="@dimen/view_margin_8"
+      android:paddingTop="@dimen/view_margin_8"
+      >
+
+    <TextView
+        android:id="@+id/send_mge"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/view_margin_16"
+        android:layout_marginRight="@dimen/view_margin_8"
+        android:background="@drawable/shape_add_btn"
+        android:gravity="center"
+        android:paddingBottom="@dimen/view_margin_8"
+        android:paddingTop="@dimen/view_margin_8"
+        android:text="@string/input_send"
+        android:textSize="@dimen/text_size_16"
+        android:minHeight="40dp"
+        />
+
+    <EditText
+        android:id="@+id/comments_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/view_margin_8"
+        android:layout_toLeftOf="@+id/send_mge"
+        android:background="@drawable/shape_text"
+        android:gravity="center|left"
+        android:hint="@string/input_edit"
+        android:paddingBottom="@dimen/view_margin_8"
+        android:paddingTop="@dimen/view_margin_8"
+        android:textSize="@dimen/text_size_14"
+        android:minHeight="40dp"
+        />
+  </RelativeLayout>
+
+</merge>

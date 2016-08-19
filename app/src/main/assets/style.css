@@ -1,0 +1,32 @@
+body{
+    font-family: "微软雅黑","Microsoft YaHei UI", "Helvetica Neue",Helvetica,Arial,sans-serif,Droid,Sans,Verdana;
+    /*font-family:Tahoma,Arial,Roboto,"Droid Sans","Helvetica Neue","Droid Sans Fallback","Heiti SC",sans-self;*/
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.agreement{
+    width:90%;
+    margin:0 auto;
+}
+.title{
+    padding:2rem 0;
+    text-align:center;
+    font-size:2.5rem;
+}
+.matter{
+    font-size:1.75rem ;
+    color:#ff1000;
+}
+.content{
+    padding:1rem 0;
+    font-size: 1.75rem;
+    color:#333333;
+    line-height:3rem;
+}
+.subtitle{
+    padding:0.5rem;
+    font-size:1.875rem ;
+    color:#000000;
+}

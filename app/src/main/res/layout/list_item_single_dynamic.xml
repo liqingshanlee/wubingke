@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.smartydroid.android.starter.kit.widget.ForegroundRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:foreground="?attr/selectableItemBackground"
+    android:paddingLeft="@dimen/view_margin_8"
+    android:paddingRight="@dimen/view_margin_8"
+    android:paddingStart="@dimen/view_margin_8"
+    android:background="@color/white"
+    tools:ignore="RtlHardcoded,RtlSymmetry"
+    >
+
+  <LinearLayout
+      android:id="@+id/title_dynamic"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentTop="true"
+      android:layout_centerVertical="true"
+      android:layout_marginBottom="@dimen/view_margin_16"
+      android:layout_marginTop="@dimen/view_margin_16"
+      android:orientation="horizontal"
+      tools:ignore="UseCompoundDrawables"
+      >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:contentDescription="@string/about_ours"
+        android:src="@mipmap/ic_detail_dynamic"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/view_margin_8"
+        android:layout_marginStart="@dimen/view_margin_8"
+        android:gravity="center_vertical"
+        android:text="@string/detail_dynamic"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/text_size_18"
+        />
+  </LinearLayout>
+
+  <RelativeLayout
+      android:id="@+id/container_dynamic"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/title_dynamic"
+      android:layout_marginLeft="@dimen/view_margin_8"
+      android:layout_marginStart="@dimen/view_margin_8"
+      android:layout_toEndOf="@+id/vertical_line"
+      android:layout_toRightOf="@+id/vertical_line"
+      android:paddingBottom="@dimen/view_margin_16"
+      >
+
+    <TextView
+        android:id="@+id/detail_article_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/view_margin_16"
+        android:layout_marginLeft="@dimen/view_margin_16"
+        android:singleLine="false"
+        android:textSize="@dimen/text_size_14"
+        />
+
+    <tech.honc.android.apps.soldier.ui.widget.AccountDetailCollectionView
+        android:id="@+id/photo_collections"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/detail_article_content"
+        android:layout_marginBottom="@dimen/view_margin_8"
+        android:layout_marginLeft="@dimen/view_margin_20"
+        />
+
+    <TextView
+        android:id="@+id/article_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/photo_collections"
+        android:paddingLeft="@dimen/view_margin_16"
+        android:textSize="@dimen/text_size_14"
+        />
+
+    <TextView
+        android:id="@+id/article_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/photo_collections"
+        android:layout_marginLeft="@dimen/view_margin_30"
+        android:layout_toEndOf="@+id/article_date"
+        android:textSize="@dimen/text_size_14"
+        />
+
+
+  </RelativeLayout>
+
+</com.smartydroid.android.starter.kit.widget.ForegroundRelativeLayout>

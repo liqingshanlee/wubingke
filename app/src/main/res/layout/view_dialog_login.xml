@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.smartydroid.android.starter.kit.widget.ForegroundRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:foreground="?attr/selectableItemBackground"
+    android:orientation="vertical"
+    >
+
+  <TextView
+      android:id="@+id/dialog_title"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentTop="true"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="@dimen/view_margin_16"
+      android:text="温馨提示"
+      android:textSize="@dimen/text_size_16"
+      tools:ignore="HardcodedText"
+      />
+
+  <TextView
+      android:id="@+id/dialog_point"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/dialog_title"
+      android:layout_centerHorizontal="true"
+      android:gravity="center"
+      android:paddingBottom="@dimen/activity_horizontal_margin"
+      android:paddingTop="@dimen/activity_horizontal_margin"
+      android:text="亲，你还没有登陆哦."
+      tools:ignore="HardcodedText"
+      />
+
+  <View
+      android:id="@+id/dialog_line1"
+      android:layout_width="match_parent"
+      android:layout_height="1px"
+      android:layout_below="@+id/dialog_point"
+      android:background="#ECECEC"
+      />
+
+  <com.smartydroid.android.starter.kit.widget.ForegroundLinearLayout
+      android:id="@+id/dialog_ll"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/dialog_line1"
+      android:foreground="?attr/selectableItemBackground"
+      android:orientation="horizontal"
+      >
+
+    <TextView
+        android:id="@+id/dialog_login"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginRight="@dimen/view_margin_8"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:paddingBottom="@dimen/view_margin_8"
+        android:paddingTop="@dimen/view_margin_8"
+        android:text="登陆"
+        android:textSize="@dimen/text_size_16"
+        tools:ignore="HardcodedText"
+        />
+
+    <View
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:paddingBottom="@dimen/view_margin_2"
+        android:paddingLeft="@dimen/view_margin_8"
+        android:paddingRight="@dimen/view_margin_8"
+        android:paddingTop="@dimen/view_margin_2"
+        />
+
+    <TextView
+        android:id="@+id/dialog_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/view_margin_8"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingBottom="@dimen/view_margin_8"
+        android:paddingTop="@dimen/view_margin_8"
+        android:text="取消"
+        android:textSize="@dimen/text_size_16"
+        tools:ignore="HardcodedText"
+        />
+  </com.smartydroid.android.starter.kit.widget.ForegroundLinearLayout>
+
+  <View
+
+      android:id="@+id/dialog_line2"
+      android:layout_width="match_parent"
+      android:layout_height="1px"
+      android:layout_below="@+id/dialog_ll"
+      android:background="#ECECEC"
+      />
+
+</com.smartydroid.android.starter.kit.widget.ForegroundRelativeLayout>

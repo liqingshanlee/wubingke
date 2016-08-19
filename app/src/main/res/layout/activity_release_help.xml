@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tech.honc.android.apps.soldier.ui.widget.MyScrollview
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+  <LinearLayout
+      xmlns:android="http://schemas.android.com/apk/res/android"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/view_padding_16"
+        android:paddingLeft="@dimen/view_padding_16"
+        android:paddingRight="@dimen/view_padding_16"
+        >
+      <EditText
+          android:id="@+id/edit_ReleaseHelper_content"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@null"
+          android:gravity="top|start"
+          android:hint="@string/release_content_hint"
+          android:minHeight="@dimen/edit_content_height"
+          android:paddingTop="@dimen/view_padding_8"
+          android:textSize="@dimen/text_size_18"
+          />
+      <tech.honc.android.apps.soldier.ui.widget.PublishFeedCollectionView
+          android:id="@+id/publish_ReleaseHelper_img"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/ReleaseHelper_SelectCity_bt"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="@dimen/view_padding_16"
+        android:paddingRight="@dimen/view_padding_16"
+        >
+      <TextView
+          android:id="@+id/release_address_title"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerVertical="true"
+          android:layout_marginRight="@dimen/view_margin_8"
+          android:text="@string/release_help_address"
+          tools:ignore="RelativeOverlap"
+          />
+      <TextView
+          android:id="@+id/release_help_address"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerVertical="true"
+          android:layout_toRightOf="@+id/release_address_title"
+          android:paddingLeft="@dimen/view_margin_8"
+          android:paddingRight="@dimen/view_margin_8"
+          android:singleLine="true"
+          tools:ignore="ContentDescription"
+          />
+
+      <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+          android:layout_centerVertical="true"
+          android:src="@mipmap/icon_forward"
+          tools:ignore="ContentDescription"
+          />
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#d8d8d8"
+        />
+
+    <RelativeLayout
+        android:id="@+id/ReleaseHelper_startTime_bt"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="@dimen/view_padding_16"
+        android:paddingRight="@dimen/view_padding_16"
+        >
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerVertical="true"
+          android:layout_marginRight="@dimen/view_margin_8"
+          android:text="@string/release_help_time"
+          tools:ignore="RelativeOverlap"
+          />
+      <TextView
+          android:id="@+id/release_help_start_time"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+          android:layout_centerVertical="true"
+          android:drawablePadding="@dimen/view_margin_8"
+          android:drawableRight="@mipmap/icon_forward"
+          tools:ignore="ContentDescription"
+          />
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#d8d8d8"
+        />
+
+    <RelativeLayout
+        android:id="@+id/ReleaseHelper_endTime_bt"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="@dimen/view_padding_16"
+        android:paddingRight="@dimen/view_padding_16"
+        >
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerVertical="true"
+          android:layout_marginRight="@dimen/view_margin_8"
+          android:text="@string/release_help_end_time"
+          tools:ignore="RelativeOverlap"
+          />
+      <TextView
+          android:id="@+id/release_help_end_time"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+          android:layout_centerVertical="true"
+          android:contentDescription="@string/about_ours"
+          android:drawablePadding="@dimen/view_margin_8"
+          android:drawableRight="@mipmap/icon_forward"
+          />
+
+    </RelativeLayout>
+
+
+  </LinearLayout>
+</tech.honc.android.apps.soldier.ui.widget.MyScrollview>

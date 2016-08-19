@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/activity_horizontal_margin"
+    android:orientation="vertical"
+    >
+
+  <com.facebook.drawee.view.SimpleDraweeView
+      android:id="@+id/ui_view_certification"
+      android:layout_width="match_parent"
+      android:layout_height="300dp"
+      app:placeholderImage="@mipmap/ic_centification"
+      />
+
+  <TextView
+      android:id="@+id/ui_view_certification_pro"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_horizontal"
+      android:layout_marginTop="@dimen/activity_horizontal_margin"
+      android:gravity="center_horizontal"
+      android:text="@string/certification_pro"
+      />
+
+  <support.ui.components.SupportButton
+      android:id="@+id/ui_view_support_sure"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_horizontal"
+      android:layout_margin="@dimen/activity_horizontal_margin"
+      android:gravity="center_horizontal"
+      android:text="@string/certification_sure"
+      android:textSize="@dimen/text_size_16"
+      android:textColor="@color/white"
+      app:supportButtonCornerRadius="24dp"
+      app:supportButtonNormalColor="@color/colorPrimary"
+      app:supportButtonRippleColor="@color/colorPrimaryDark"
+      />
+</LinearLayout>

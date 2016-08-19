@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.smartydroid.android.starter.kit.widget.ForegroundRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:foreground="?attr/selectableItemBackground"
+    android:orientation="vertical"
+    >
+
+  <TextView
+      android:id="@+id/ui_text_title"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentLeft="true"
+      android:padding="@dimen/view_margin_8"
+      android:textSize="@dimen/text_size_16"
+      tools:ignore="RtlHardcoded"
+      />
+
+  <TextView
+      android:id="@+id/ui_text_value"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentRight="true"
+      android:padding="@dimen/view_margin_8"
+      tools:ignore="RelativeOverlap,RtlHardcoded"
+      />
+
+</com.smartydroid.android.starter.kit.widget.ForegroundRelativeLayout>

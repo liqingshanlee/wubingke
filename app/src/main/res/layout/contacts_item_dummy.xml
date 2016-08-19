@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:background="@android:color/white"
+    android:foreground="?attr/selectableItemBackground"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    >
+  <ImageView
+      android:id="@+id/image_support_im_contacts_dummy_avatar"
+      android:layout_width="40dp"
+      android:layout_height="40dp"
+      android:layout_gravity="center_vertical"
+      android:src="@drawable/support_im_contacts_new_contact"
+      />
+  <TextView
+      android:id="@+id/text_support_im_contacts_dummy_text"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_vertical|right"
+      android:layout_marginLeft="72dp"
+      android:layout_marginStart="72dp"
+      android:lines="1"
+      android:textColor="@color/material_grey_900"
+      android:textSize="@dimen/abc_text_size_subhead_material"
+      />
+</FrameLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="@dimen/view_margin_8"
+		android:layout_marginRight="@dimen/view_margin_8"
+		android:layout_marginTop="@dimen/view_margin_16"
+		android:layout_marginBottom="@dimen/view_margin_16"
+		android:orientation="vertical">
+
+	<android.support.v7.widget.SearchView
+			android:id="@+id/search"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:background="@color/white"
+			android:inputType="text"
+			android:focusable="false"
+			android:searchHintIcon="@mipmap/ic_filter_search"
+			android:searchIcon="@mipmap/ic_filter_search"
+			android:focusableInTouchMode="false"
+	/>
+</LinearLayout>

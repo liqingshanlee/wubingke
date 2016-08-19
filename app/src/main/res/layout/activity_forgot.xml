@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dim_foreground"
+    android:orientation="vertical"
+    >
+  <include layout="@layout/include_toolbar"/>
+
+  <RelativeLayout
+      android:id="@+id/rl_edtxt"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="24dp"
+      android:background="#ffffff"
+      >
+
+    <RelativeLayout
+        android:id="@+id/rl_username"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginLeft="@dimen/view_margin_16"
+        android:layout_marginRight="@dimen/view_margin_16"
+        >
+
+      <ImageView
+          android:id="@+id/iv_username"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerVertical="true"
+          android:layout_marginRight="10dip"
+          android:src="@mipmap/icon_mobile"
+          />
+
+      <EditText
+          android:id="@+id/et_forgot_username"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_centerVertical="true"
+          android:layout_toRightOf="@id/iv_username"
+          android:background="#00000000"
+          android:hint="@string/user_name_number"
+          android:inputType="number"
+          android:singleLine="true"
+          android:textColor="#565656"
+          android:textSize="@dimen/text_size_18"
+          />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.8dip"
+        android:layout_below="@id/rl_username"
+        android:background="#bdbdbd"
+        />
+
+    <RelativeLayout
+        android:id="@+id/rl_code"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_below="@id/rl_username"
+        android:layout_marginLeft="@dimen/view_margin_16"
+        android:layout_marginRight="@dimen/view_margin_16"
+        >
+
+      <ImageView
+          android:id="@+id/iv_code"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerVertical="true"
+          android:layout_marginRight="10dip"
+          android:src="@mipmap/icon_code"
+          />
+
+      <EditText
+          android:id="@+id/et_forgot_code"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_centerVertical="true"
+          android:layout_toRightOf="@id/iv_code"
+          android:background="#00000000"
+          android:hint="@string/user_code"
+          android:inputType="number"
+          android:singleLine="true"
+          android:textColor="#565656"
+          android:textSize="@dimen/text_size_18"
+          />
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="38dp"
+          android:layout_alignParentEnd="true"
+          android:layout_alignParentRight="true"
+          android:layout_centerVertical="true"
+          android:layout_marginLeft="4dp"
+          android:layout_marginStart="4dp"
+          android:layout_marginTop="4dp"
+          android:background="@android:color/transparent"
+          android:gravity="center_vertical"
+          android:orientation="horizontal"
+          >
+        <View
+            android:layout_width="1dp"
+            android:layout_height="24dp"
+            android:background="@color/colorPrimary"
+            />
+        <Button
+            android:id="@+id/btn_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="获取验证码"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_size_14"
+            style="?attr/borderlessButtonStyle"
+            />
+      </LinearLayout>
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.8dip"
+        android:layout_below="@id/rl_code"
+        android:background="#bdbdbd"
+        />
+
+    <RelativeLayout
+        android:id="@+id/rl_password"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_below="@id/rl_code"
+        android:layout_marginLeft="@dimen/view_margin_16"
+        android:layout_marginRight="@dimen/view_margin_16"
+        >
+
+      <ImageView
+          android:id="@+id/iv_password"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerVertical="true"
+          android:layout_marginRight="10dip"
+          android:src="@mipmap/icon_password"
+          />
+
+      <EditText
+          android:id="@+id/et_forgot_password"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_centerVertical="true"
+          android:layout_toRightOf="@id/iv_password"
+          android:background="#00000000"
+          android:hint="@string/user_new_password"
+          android:inputType="textPassword"
+          android:singleLine="true"
+          android:textColor="#565656"
+          android:textSize="@dimen/text_size_18"
+          />
+    </RelativeLayout>
+  </RelativeLayout>
+
+
+  <support.ui.components.SupportButton
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      android:id="@+id/btn_forgot_ok"
+      android:layout_width="match_parent"
+      android:layout_height="48dp"
+      android:layout_marginLeft="@dimen/activity_horizontal_margin"
+      android:layout_marginRight="@dimen/activity_horizontal_margin"
+      android:layout_marginTop="@dimen/activity_vertical_margin"
+      android:gravity="center"
+      android:text="确定"
+      android:textColor="@android:color/white"
+      android:textSize="@dimen/text_size_18"
+      app:supportButtonCornerRadius="24dp"
+      />
+</LinearLayout>

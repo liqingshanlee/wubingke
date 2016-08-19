@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="68dip"
+    android:background="#ffffff"
+    android:foreground="?attr/selectableItemBackground"
+    android:padding="4dip"
+    >
+
+
+  <com.alibaba.mobileim.fundamental.widget.WXNetworkImageView
+      android:id="@+id/head"
+      android:layout_width="48dip"
+      android:layout_height="48dip"
+      android:layout_centerVertical="true"
+      android:layout_gravity="center_vertical"
+      android:layout_marginLeft="10dp"
+      android:scaleType="centerCrop"
+      android:src="@drawable/ic_placeholder_default_tirbe"
+      />
+
+
+  <TextView
+      android:id="@+id/select_name"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerVertical="true"
+      android:layout_marginLeft="20dip"
+      android:layout_marginRight="20dp"
+      android:layout_toRightOf="@id/head"
+      android:ellipsize="middle"
+      android:text="XXX讨论组"
+      android:textColor="@color/black"
+      android:textSize="16sp"
+
+      />
+
+</RelativeLayout>

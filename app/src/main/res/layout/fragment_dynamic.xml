@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="tech.honc.android.apps.soldier.ui.fragment.AccountFragment"
+    >
+
+
+  <android.support.design.widget.AppBarLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      >
+    <include layout="@layout/include_toolbar"/>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/frg_dynamic_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:tabIndicatorColor="@color/colorSelectorTab"
+        app:tabIndicatorHeight="2dip"
+        app:tabSelectedTextColor="@color/colorSelectorTab"
+        app:tabTextColor="@color/black"
+
+        >
+    </android.support.design.widget.TabLayout>
+
+  </android.support.design.widget.AppBarLayout>
+
+  <android.support.v4.view.ViewPager
+      android:id="@+id/frg_dynamic_viewpager"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:layout_behavior="@string/appbar_scrolling_view_behavior"
+      >
+
+
+  </android.support.v4.view.ViewPager>
+
+</LinearLayout>

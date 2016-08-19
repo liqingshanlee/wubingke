@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+  <android.support.v7.widget.Toolbar
+      android:id="@+id/toolbar"
+      android:layout_width="match_parent"
+      android:layout_height="?attr/actionBarSize"
+      android:background="@color/colorPrimaryDark"
+      >
+    <TextView
+        android:id="@+id/btn_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:layout_marginRight="20dp"
+        android:paddingBottom="4dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="4dp"
+        android:text="发送"
+        android:textColor="@color/white"
+        />
+  </android.support.v7.widget.Toolbar>
+
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="10dp"
+      android:paddingLeft="10dp"
+      android:paddingRight="10dp"
+      android:paddingTop="20dp"
+      android:text="你需要发送验证申请，等对方通过"
+      android:textSize="14sp"
+      />
+
+
+  <tech.honc.android.apps.soldier.feature.im.widget.ClearEditText
+      android:id="@+id/et_clear"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="10dp"
+      android:hint="请输入验证消息"
+      android:lines="1"
+      android:paddingLeft="10dp"
+      android:textColor="#263238"
+      android:textSize="16sp"
+
+      tools:ignore="RtlSymmetry"
+      />
+
+
+</LinearLayout>

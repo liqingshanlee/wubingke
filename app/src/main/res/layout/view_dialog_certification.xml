@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+  <TextView
+      android:id="@+id/ui_dialog_certification"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_centerHorizontal="true"
+      android:background="@color/background_item"
+      android:gravity="center"
+      android:padding="@dimen/activity_horizontal_margin"
+      android:text="@string/certification_information"
+      android:textColor="@color/black"
+      android:textSize="@dimen/text_size_18"
+      />
+
+  <android.support.v7.widget.RecyclerView
+      android:id="@+id/ui_dialog_recycler"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/ui_dialog_certification"
+      />
+
+
+</RelativeLayout>

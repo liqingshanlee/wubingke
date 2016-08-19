@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+  <android.support.v7.widget.SearchView
+      android:id="@+id/ui_city_picker_search"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:padding="@dimen/view_padding_8"
+      />
+
+  <FrameLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      >
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/ui_view_city"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+    <TextView
+        android:id="@+id/ui_view_bubble"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|end"
+        android:layout_marginRight="24dp"
+        android:background="@drawable/im_view_bubble"
+        android:gravity="center"
+        android:textColor="#FFffffff"
+        android:textSize="48sp"
+        android:visibility="invisible"
+        tools:ignore="RtlHardcoded"
+        tools:text="A"
+        />
+
+    <tech.honc.android.apps.soldier.feature.im.widget.SideBar
+        android:id="@+id/ui_view_sidebar"
+        android:layout_width="20dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="right|end"
+        tools:ignore="RtlHardcoded"
+        />
+  </FrameLayout>
+</LinearLayout>

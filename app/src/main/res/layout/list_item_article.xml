@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.smartydroid.android.starter.kit.widget.ForegroundRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:foreground="?attr/selectableItemBackground"
+    android:paddingBottom="@dimen/view_margin_8"
+    android:paddingEnd="@dimen/view_margin_8"
+    android:paddingLeft="@dimen/view_margin_8"
+    android:paddingRight="@dimen/view_margin_8"
+    android:paddingStart="@dimen/view_margin_8"
+    >
+
+  <TextView
+      android:id="@+id/article_title"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/view_margin_8"
+      android:textSize="@dimen/text_size_20"
+      />
+
+  <com.facebook.drawee.view.SimpleDraweeView
+      android:id="@+id/simple"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/simple_image"
+      android:layout_below="@+id/article_title"
+      android:layout_marginTop="@dimen/view_margin_8"
+      fresco:placeholderImage="@mipmap/ic_default_article"
+      fresco:placeholderImageScaleType="fitXY"
+      />
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/simple"
+      android:layout_marginBottom="@dimen/view_margin_8"
+      android:layout_marginTop="@dimen/view_margin_16"
+      >
+
+    <LinearLayout
+        android:id="@+id/type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal"
+        >
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/article_type"
+          />
+
+      <TextView
+          android:id="@+id/type_value"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="预览"
+          android:textColor="@color/colorPrimary"
+          />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/view_margin_20"
+        android:layout_marginStart="@dimen/view_margin_20"
+        android:layout_toEndOf="@+id/type"
+        android:layout_toRightOf="@+id/type"
+        android:orientation="horizontal"
+        >
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/article_time"
+          />
+
+      <TextView
+          android:id="@+id/type_time"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="2015-03-01"
+          android:textColor="@color/colorPrimary"
+          />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal"
+        >
+
+      <TextView
+          android:id="@+id/article_comment"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="3条"
+          android:textColor="@color/colorPrimary"
+          />
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/article_comment"
+          />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/view_margin_8"
+        android:layout_marginRight="@dimen/view_margin_8"
+        android:layout_toLeftOf="@+id/comment"
+        android:layout_toStartOf="@+id/comment"
+        android:orientation="horizontal"
+        >
+
+      <TextView
+          android:id="@+id/article_satr"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="3条"
+          android:textColor="@color/colorPrimary"
+          />
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/article_star"
+          />
+
+    </LinearLayout>
+
+  </RelativeLayout>
+
+
+</com.smartydroid.android.starter.kit.widget.ForegroundRelativeLayout>

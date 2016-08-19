@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="colorPrimary">#4CB050</color>
+  <color name="colorPrimaryDark">#1A9924</color>
+  <color name="colorAccent">#FBC55C</color>
+  <color name="dim_foreground">#80bebebe</color>
+  <color name="colorButtonDisabled">#CCCCCC</color>
+  <color name="colorButtonNormal">#49C4A0</color>
+  <color name="windowBackground">#F7F6F6</color>
+  <color name="black">#000000</color>
+  <color name="colored">#ff6666</color>
+  <color name="colorblue">#0099ff</color>
+  <color name="colorbigblue">#0033ff</color>
+  <color name="colorPrimarygreen">#009900</color>
+
+  <!--man color choice-->
+  <color name="color_one">#2b538f</color>
+  <color name="color_two">#486e50</color>
+  <color name="color_three">#288f30</color>
+  <color name="color_four">#088fdc</color>
+
+  <color name="colorSelectorTab">#0A9D78</color>
+  <color name="colorTextview">#808080</color>
+
+  <!--woman color choice-->
+
+  <color name="color_woman_one">#d270ac</color>
+  <color name="color_woman_two">#ba7bf0</color>
+  <color name="color_woman_three">#2abecb</color>
+  <color name="color_woman_four">#9eba4a</color>
+
+  <color name="divider_color">#EEEEEE</color>
+  <color name="third_text_color">#999999</color>
+  <color name="more_line_color">#cccccc</color>
+  <color name="common_bg_color">#f2f2f2</color>
+  <color name="common_line_color">#cccccc</color>
+  <color name="tribe_host">#FFBD04</color>
+  <color name="tribe_manager">#45D282</color>
+  <color name="background_item">#E5E5E5</color>
+
+</resources>

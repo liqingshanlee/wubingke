@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.smartydroid.android.starter.kit.widget.ForegroundRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:foreground="?attr/selectableItemBackground"
+    android:orientation="horizontal"
+    >
+
+  <com.facebook.drawee.view.SimpleDraweeView
+      android:id="@+id/simple_model"
+      android:layout_width="@dimen/simple_home_width"
+      android:layout_height="@dimen/simple_home_height"
+      android:layout_gravity="center_vertical"
+      android:paddingBottom="@dimen/view_margin_8"
+      android:paddingTop="@dimen/view_margin_8"
+      fresco:placeholderImage="@mipmap/ic_information_big"
+      fresco:placeholderImageScaleType="centerCrop"
+      fresco:roundAsCircle="true"
+      tools:ignore="RtlHardcoded"
+      />
+
+</com.smartydroid.android.starter.kit.widget.ForegroundRelativeLayout>

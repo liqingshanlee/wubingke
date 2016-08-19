@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/view_padding_16"
+    android:paddingStart="@dimen/view_padding_16"
+    android:background="@color/white"
+    tools:ignore="RtlSymmetry"
+    >
+
+  <RelativeLayout
+      android:minHeight="40dp"
+      android:id="@+id/rl_inform"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_vertical"
+      android:gravity="center_vertical"
+      android:layout_marginBottom="@dimen/view_margin_8"
+      android:layout_marginTop="@dimen/view_margin_8"
+      tools:ignore="UselessParent"
+      >
+    <ImageView
+        android:id="@+id/inform"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_name"
+        android:src="@mipmap/ic_detail_inform"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/view_margin_20"
+        android:layout_toEndOf="@+id/inform"
+        android:gravity="center"
+        android:text="@string/details_inform"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_16"
+        />
+  </RelativeLayout>
+
+  <View
+      android:layout_width="wrap_content"
+      android:layout_height="1dp"
+      android:background="#d8d8d8"
+      />
+
+  <RelativeLayout
+      android:minHeight="40dp"
+      android:id="@+id/rl_shielding"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_vertical"
+      android:layout_marginBottom="@dimen/view_margin_8"
+      android:layout_marginTop="@dimen/view_margin_8"
+      tools:ignore="UselessParent"
+      android:gravity="center_vertical"
+      >
+    <ImageView
+        android:id="@+id/shielding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_name"
+        android:src="@mipmap/ic_detail_shielding"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/view_margin_20"
+        android:layout_toEndOf="@+id/shielding"
+        android:gravity="center"
+        android:text="@string/details_shield"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_16"
+        />
+  </RelativeLayout>
+
+</LinearLayout>

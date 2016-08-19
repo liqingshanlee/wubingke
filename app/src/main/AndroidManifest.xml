@@ -1,0 +1,606 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="tech.honc.android.apps.soldier">
+
+  <!-- 用于进行网络定位 -->
+  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+  <!-- 用于访问GPS定位 -->
+  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+  <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+  <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+  <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+  <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+  <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+  <!-- 用于访问网络，网络定位需要上网 -->
+  <uses-permission android:name="android.permission.INTERNET"/>
+  <!-- 用于读取手机当前的状态 -->
+  <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+  <!-- 写入扩展存储，向扩展卡写入数据，用于写入缓存定位数据 -->
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+  <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+  <!-- 友盟需要增加的权限 -->
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+  <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+  <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+  <uses-permission android:name="android.permission.INTERNET"/>
+  <uses-permission android:name="android.permission.READ_LOGS"/>
+  <uses-permission android:name="android.permission.CALL_PHONE"/>
+  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+  <!-- QQ、QQ空间所需权限 -->
+  <uses-permission android:name="android.permission.GET_TASKS"/>
+  <uses-permission android:name="android.permission.SET_DEBUG_APP"/>
+  <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+  <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+  <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+  <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+  <!--读取手机通信录-->
+  <uses-permission android:name="android.permission.READ_CONTACTS"/>
+  <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+
+  <application
+      android:name=".ui.app.SoldierApp"
+      android:allowBackup="true"
+      android:icon="@mipmap/ic_launcher"
+      android:label="@string/app_name"
+      android:theme="@style/AppTheme"
+      >
+    <!-- 启动页 -->
+    <activity
+        android:name=".ui.activity.LauncherActivity"
+        android:launchMode="singleTask"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme.NoActionBar.Launcher">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN"/>
+
+        <category android:name="android.intent.category.LAUNCHER"/>
+      </intent-filter>
+
+    </activity>
+    <activity
+        android:name=".ui.activity.MainActivity"
+        android:launchMode="singleTask"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme.Main">
+    </activity>
+    <activity
+        android:name=".ui.activity.FilterActivity"
+        android:label="@string/label_filter"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme"
+        android:windowSoftInputMode="adjustPan">
+      <meta-data
+          android:name="android.support.PARENT_ACTIVITY"
+          android:value=".ui.activity.MainActivity"/>
+    </activity>
+    <activity
+        android:name=".ui.activity.LoginActivity"
+        android:launchMode="singleTask"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme.NoActionBar"/>
+    <activity
+        android:name=".ui.activity.FilterAgainActivity"
+        android:label="@string/label_filter"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme">
+    </activity>
+    <activity
+        android:name=".ui.activity.SoldierDetailActivity"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme.NoActionBar"/>
+
+    <activity
+        android:name=".ui.activity.ReleaseHelpActivity"
+        android:label="@string/find_help"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme"
+        android:windowSoftInputMode="adjustPan">
+      <meta-data
+          android:name="android.support.PARENT_ACTIVITY"
+          android:value=".ui.activity.MainActivity"/>
+    </activity>
+
+    <!-- 注册 -->
+    <activity
+        android:name=".ui.activity.RegisterActivity"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme.NoActionBar">
+    </activity>
+    <!-- 忘记密码 -->
+    <activity
+        android:name=".ui.activity.ForgotActivity"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme.NoActionBar">
+    </activity>
+    <!-- 登陆首页 -->
+    <activity
+        android:name=".ui.activity.FirstLoginActivity"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme.NoActionBar">
+
+    </activity>
+    <!-- 友盟配置 -->
+    <activity
+        android:name="com.umeng.socialize.editorpage.ShareActivity"
+        android:excludeFromRecents="true"
+        android:theme="@style/Theme.UMDefault"/>
+
+    <!-- 微信平台 -->
+    <activity
+        android:name="tech.honc.android.apps.soldier.wxapi.WXEntryActivity"
+        android:configChanges="keyboardHidden|orientation|screenSize"
+        android:exported="true"
+        android:screenOrientation="portrait"
+        android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+    <!-- 新浪微博登陆配置 -->
+    <activity
+        android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser"
+        android:configChanges="keyboardHidden|orientation"
+        android:exported="false"
+        android:windowSoftInputMode="adjustResize">
+    </activity>
+
+    <!-- QQ登陆配置 -->
+    <activity
+        android:name="com.tencent.tauth.AuthActivity"
+        android:launchMode="singleTask"
+        android:noHistory="true">
+      <intent-filter>
+        <action android:name="android.intent.action.VIEW"/>
+
+        <category android:name="android.intent.category.DEFAULT"/>
+        <category android:name="android.intent.category.BROWSABLE"/>
+
+        <data android:scheme="tencent1105240565"/>
+      </intent-filter>
+    </activity>
+
+
+    <!-- 基本资料 -->
+    <activity
+        android:name=".ui.activity.ProfileRegisterActivity"
+        android:launchMode="singleTask"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme.NoActionBar">
+
+    </activity>
+    <!-- 用户协议 -->
+    <activity
+        android:name=".ui.activity.AgreementActivity"
+        android:label="用户协议"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme">
+      <meta-data
+          android:name="android.support.PARENT_ACTIVITY"
+          android:value=".ui.activity.AgreementActivity"/>
+    </activity>
+    <!--城市列表-->
+
+    <activity
+        android:name="com.tencent.connect.common.AssistActivity"
+        android:configChanges="orientation|keyboardHidden|screenSize"
+        android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+
+    <!-- 发布普通动态 -->
+    <activity
+        android:name=".ui.activity.ReleaseOrdinaryActivity"
+        android:label="@string/find_ordinary"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme"
+        android:windowSoftInputMode="adjustPan">
+      <meta-data
+          android:name="android.support.PARENT_ACTIVITY"
+          android:value=".ui.activity.MainActivity"/>
+    </activity>
+    <!--动态详情（同城/好友）-->
+    <activity
+        android:name=".ui.activity.DynamicDetailsActivity"
+        android:label="@string/Details"
+        android:launchMode="singleTask"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme">
+      <meta-data
+          android:name="android.support.PARENT_ACTIVITY"
+          android:value=".ui.activity.MainActivity"/>
+    </activity>
+    <!--地图-->
+    <activity
+        android:name=".ui.activity.MapActivity"
+        android:theme="@style/AppTheme.NoActionBar"/>
+    <!--城市选择-->
+
+    <activity
+        android:name=".ui.activity.SettingActivity"
+        android:label="设置"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme">
+      <meta-data
+          android:name="android.support.PARENT_ACTIVITY"
+          android:value=".ui.activity.MainActivity"/>
+    </activity>
+    <!--动态详情（任务）-->
+    <activity
+        android:name=".ui.activity.TaskDynamicDetailsActivity"
+        android:label="@string/Details"
+        android:launchMode="singleTask"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme">
+      <meta-data
+          android:name="android.support.PARENT_ACTIVITY"
+          android:value=".ui.activity.TaskDynamicDetailsActivity"/>
+    </activity>
+
+    <!--修改密码-->
+    <activity
+        android:name=".ui.activity.ModificationActivity"
+        android:label="修改密码"
+        android:theme="@style/AppTheme">
+      <meta-data
+          android:name="android.support.PARENT_ACTIVITY"
+          android:value=".ui.activity.SettingActivity"/>
+    </activity>
+    <activity
+        android:name=".ui.activity.InformationDetailActivity"
+        android:label="@string/label_info_detail"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme">
+      <meta-data
+          android:name="android.support.PARENT_ACTIVITY"
+          android:value=".ui.activity.MainActivity"/>
+    </activity>
+    <!--意见反馈-->
+    <activity
+        android:name=".ui.activity.FeedBackActivity"
+        android:label="意见反馈"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme">
+      <meta-data
+          android:name="android.support.PARENT_ACTIVITY"
+          android:value=".ui.activity.SettingActivity"/>
+    </activity>
+    <!--关于我们-->
+    <activity
+        android:name=".ui.activity.AboutoursActivity"
+        android:label="关于我们"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme">
+      <meta-data
+          android:name="android.support.PARENT_ACTIVITY"
+          android:value=".ui.activity.SettingActivity"/>
+    </activity>
+
+    <!--图片浏览-->
+    <activity
+        android:name=".utils.imagebrowser.PhotoBrowserActivity"
+        android:label="@string/label_photo"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme">
+    </activity>
+
+    <!--个人资料-->
+    <activity
+        android:name=".ui.activity.PersonageDataActivity"
+        android:label="个人资料"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme">
+      <meta-data
+          android:name="android.support.PARENT_ACTIVITY"
+          android:value=".ui.activity.MainActivity"/>
+    </activity>
+    <!--助人-->
+    <activity
+        android:name=".ui.activity.HelpActivity"
+        android:label="助人"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme">
+      <meta-data
+          android:name="android.support.PARENT_ACTIVITY"
+          android:value=".ui.activity.MainActivity"/>
+    </activity>
+    <!--粉丝-->
+    <activity
+        android:name=".ui.activity.FansActivity"
+        android:label="粉丝"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme">
+      <meta-data
+          android:name="android.support.PARENT_ACTIVITY"
+          android:value=".ui.activity.MainActivity"/>
+    </activity>
+    <!--关注-->
+    <activity
+        android:name=".ui.activity.FocusActivity"
+        android:label="关注"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme">
+      <meta-data
+          android:name="android.support.PARENT_ACTIVITY"
+          android:value=".ui.activity.MainActivity"/>
+    </activity>
+
+    <!--查看别人动态-->
+    <activity
+        android:name=".ui.activity.UserFeedActivity"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme.NoActionBar"/>
+
+    <!--自己的动态-->
+    <activity
+        android:name=".ui.activity.PersonalFeedActivity"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme.NoActionBar"/>
+
+    <activity
+        android:name=".ui.activity.PersonalActivity"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme.NoActionBar"/>
+
+    <activity
+        android:name="mediapicker.activities.MediaPickerActivity"
+        android:screenOrientation="portrait"
+        android:theme="@style/MediaPickerTheme"/>
+    <!--我的相册界面-->
+    <activity
+        android:name=".ui.activity.PersonalPhotoGalleryActivity"
+        android:label="@string/label_gallery"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme">
+      <meta-data
+          android:name="android.support.PARENT_ACTIVITY"
+          android:value=".ui.activity.MainActivity"/>
+    </activity>
+    <!--我的求助界面-->
+    <activity
+        android:name=".ui.activity.PersonalTaskActivity"
+        android:label="@string/label_personal_help"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme">
+      <meta-data
+          android:name="android.support.PARENT_ACTIVITY"
+          android:value=".ui.activity.MainActivity"/>
+    </activity>
+    <!--收藏界面-->
+    <activity
+        android:name=".ui.activity.PersonalCollectionActivity"
+        android:label="@string/label_collections"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme">
+      <meta-data
+          android:name="android.support.PARENT_ACTIVITY"
+          android:value=".ui.activity.MainActivity"/>
+    </activity>
+
+    <activity
+        android:name=".ui.activity.SignatureActivity"
+        android:label="个性签名"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme">
+      <meta-data
+          android:name="android.support.PARENT_ACTIVITY"
+          android:value=".ui.activity.MainActivity"/>
+    </activity>
+
+    <activity
+        android:name=".utils.imagebrowser.PhotoBDActivity"
+        android:label="@string/label_photo"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme"/>
+
+    <!--求助详情-->
+    <activity
+        android:name=".ui.activity.PersonalTaskDetailActivity"
+        android:label="@string/label_task_personal"
+        android:launchMode="singleTask"
+        android:theme="@style/AppTheme">
+      <meta-data
+          android:name="android.support.PARENT_ACTIVITY"
+          android:value=".ui.activity.PersonalTaskActivity"/>
+    </activity>
+    <!--引导页-->
+    <activity
+        android:name=".ui.activity.SoldierAppIntro"
+        android:theme="@style/AppTheme.NoActionBar"/>
+    <!--别人的粉丝-->
+    <activity
+        android:name=".ui.activity.OthersFansActivity"
+        android:label="@string/label_other_fans"
+        android:theme="@style/AppTheme"
+        >
+    </activity>
+    <!--别人的关注-->
+    <activity
+        android:name=".ui.activity.OtherAttentionsActivity"
+        android:label="@string/label_other_focus"
+        android:theme="@style/AppTheme">
+    </activity>
+    <!--别人的求助-->
+    <activity
+        android:name=".ui.activity.OtherHelpActivity"
+        android:label="@string/label_other_help"
+        android:theme="@style/AppTheme">
+    </activity>
+    <!--别人的助人-->
+    <activity
+        android:name=".ui.activity.OtherHelperActivity"
+        android:label="@string/label_other_helper"
+        android:theme="@style/AppTheme">
+    </activity>
+
+    <!--BugHd-->
+    <meta-data
+        android:name="BUG_HD_SDK_GENERAL_KEY"
+        android:value="${BUG_HD_SDK_GENERAL_KEY}"/>
+    <!--友盟APPKey-->
+    <meta-data
+        android:name="UMENG_APPKEY"
+        android:value="${UMENG_APPKEY}"/>
+    <meta-data
+        android:name="UMENG_CHANNEL"
+        android:value="${UMENG_CHANNEL}"/>
+
+    <!-- 高德地图2.4.1 -->
+    <service android:name="com.amap.api.location.APSService"/>
+    <!--高德-->
+    <meta-data
+        android:name="com.amap.api.v2.apikey"
+        android:value="132c010ffa9c6265f484e27f08984499"/>
+
+    <!--openIM start-->
+
+    <!--联系人系统消息-->
+    <activity
+        android:name=".feature.im.ui.activity.SystemAddContactActivity"
+        android:launchMode="singleTop"
+        android:theme="@style/AppTheme.NoActionBar"
+        >
+      <meta-data
+          android:name="android.support.PARENT_ACTIVITY"
+          android:value=".ui.activity.MainActivity"/>
+    </activity>
+
+    <!--群系统消息-->
+    <activity
+        android:name=".feature.im.ui.activity.SystemAddTribeActivity"
+        android:launchMode="singleTop"
+        android:theme="@style/AppTheme.NoActionBar"
+        >
+      <meta-data
+          android:name="android.support.PARENT_ACTIVITY"
+          android:value=".ui.activity.MainActivity"/>
+    </activity>
+
+    <!--联系人信息设置-->
+    <activity
+        android:name=".feature.im.ui.activity.ContactSettingActivity"
+        android:launchMode="singleTop"
+        android:theme="@style/AppTheme.NoActionBar"
+        >
+      <meta-data
+          android:name="android.support.PARENT_ACTIVITY"
+          android:value=".ui.activity.MainActivity"/>
+    </activity>
+    <activity
+        android:name=".feature.im.ui.activity.TribeActivity"
+        android:theme="@style/AppTheme.NoActionBar">
+      <meta-data
+          android:name="android.support.PARENT_ACTIVITY"
+          android:value=".ui.activity.MainActivity"/>
+    </activity>
+
+    <activity
+        android:name=".feature.im.ui.activity.TribeInfoActivity"
+        android:theme="@style/AppTheme.NoActionBar">
+      <meta-data
+          android:name="android.support.PARENT_ACTIVITY"
+          android:value=".feature.im.ui.activity.TribeActivity"/>
+    </activity>
+
+    <activity
+        android:name=".feature.im.ui.activity.TribeMsgRecTypeSetActivity"
+        android:theme="@style/AppTheme.NoActionBar">
+      <meta-data
+          android:name="android.support.PARENT_ACTIVITY"
+          android:value=".feature.im.ui.activity.TribeInfoActivity"/>
+    </activity>
+
+    <activity
+        android:name=".feature.im.ui.activity.InviteTribeMemberActivity"
+        android:label="@string/label_add_member"
+        android:theme="@style/AppTheme">
+      <meta-data
+          android:name="android.support.PARENT_ACTIVITY"
+          android:value=".feature.im.ui.activity.TribeMembersActivity"/>
+    </activity>
+
+    <activity
+        android:name=".feature.im.ui.activity.TribeMembersActivity"
+        android:theme="@style/AppTheme.NoActionBar">
+      <meta-data
+          android:name="android.support.PARENT_ACTIVITY"
+          android:value=".feature.im.ui.activity.TribeInfoActivity"/>
+    </activity>
+
+    <activity
+        android:name=".feature.im.ui.activity.EditTribeInfoActivity"
+        android:theme="@style/AppTheme.NoActionBar">
+      <meta-data
+          android:name="android.support.PARENT_ACTIVITY"
+          android:value=".feature.im.ui.activity.TribeActivity"/>
+    </activity>
+
+    <activity
+        android:name=".feature.im.ui.activity.EditMyTribeProfileActivity"
+        android:theme="@style/AppTheme.NoActionBar">
+      <meta-data
+          android:name="android.support.PARENT_ACTIVITY"
+          android:value=".feature.im.ui.activity.TribeInfoActivity"/>
+    </activity>
+    <!--搜索-->
+    <activity
+        android:name=".feature.im.ui.activity.SearchAccountActivity"
+        android:theme="@style/AppTheme.NoActionBar">
+    </activity>
+
+    <activity
+        android:name=".feature.im.ui.activity.AddFriendActivity"
+        android:theme="@style/AppTheme.NoActionBar">
+    </activity>
+
+    <activity
+        android:name=".feature.im.ui.activity.SendAddContactRequestActivity"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme.NoActionBar">
+      <meta-data
+          android:name="android.support.PARENT_ACTIVITY"
+          android:value=".feature.im.ui.activity.AddFriendActivity"/>
+    </activity>
+
+    <activity
+        android:name=".feature.im.ui.activity.InviteContactMembersActivity"
+        android:label="@string/label_invite"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme">
+      <meta-data
+          android:name="android.support.PARENT_ACTIVITY"
+          android:value=".feature.im.ui.activity.AddFriendActivity"/>
+    </activity>
+    <activity
+        android:name=".ui.activity.CityPickerActivity"
+        android:label="@string/label_city"
+        android:theme="@style/AppTheme"/>
+    <activity
+        android:name=".ui.activity.UseTermsActivity"
+        android:label="@string/label_use_terms"
+        android:theme="@style/AppTheme">
+      <meta-data
+          android:name="android.support.PARENT_ACTIVITY"
+          android:value=".ui.activity.UseTermsActivity"/>
+    </activity>
+    <activity
+        android:name=".ui.activity.MapViewActivity"
+        android:theme="@style/AppTheme.NoActionBar"/>
+
+    <activity
+        android:name=".ui.activity.SoldierCertificationActivity"
+        android:label="@string/label_certification"
+        android:theme="@style/AppTheme">
+      <meta-data
+          android:name="android.support.PARENT_ACTIVITY"
+          android:value=".ui.activity.MainActivity"/>
+    </activity>
+
+    <activity
+        android:name=".ui.activity.SoldierAreaActivity"
+        android:label="服役地区"
+        android:theme="@style/AppTheme">
+      <meta-data
+          android:name="android.support.PARENT_ACTIVITY"
+          android:value=".ui.activity.PersonageDataActivity"/>
+    </activity>
+  </application>
+</manifest>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@android:color/white"
+    android:foreground="?attr/selectableItemBackground"
+    >
+
+  <com.smartydroid.android.starter.kit.widget.ForegroundLinearLayout
+      android:id="@+id/contain_fans"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:layout_weight="1"
+      android:background="@android:color/white"
+      android:foreground="?attr/selectableItemBackground"
+      android:paddingBottom="@dimen/view_margin_8"
+      android:paddingTop="@dimen/view_margin_8"
+      android:gravity="center"
+      android:orientation="vertical"
+      >
+
+    <TextView
+        android:id="@+id/fans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/text_size_18"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/detail_fans"
+        />
+
+  </com.smartydroid.android.starter.kit.widget.ForegroundLinearLayout>
+
+  <android.support.design.internal.ForegroundLinearLayout
+      android:id="@+id/container_attentions"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:layout_weight="1"
+      android:background="@android:color/white"
+      android:foreground="?attr/selectableItemBackground"
+      android:gravity="center"
+      android:orientation="vertical"
+      android:paddingBottom="@dimen/view_margin_8"
+      android:paddingTop="@dimen/view_margin_8"
+      >
+
+    <TextView
+        android:id="@+id/detail_attentions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/text_size_18"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/detail_attentions"
+        />
+
+  </android.support.design.internal.ForegroundLinearLayout>
+
+  <android.support.design.internal.ForegroundLinearLayout
+      android:id="@+id/container_helper"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:layout_weight="1"
+      android:background="@android:color/white"
+      android:foreground="?attr/selectableItemBackground"
+      android:gravity="center"
+      android:orientation="vertical"
+      android:paddingBottom="@dimen/view_margin_8"
+      android:paddingTop="@dimen/view_margin_8"
+      >
+
+    <TextView
+        android:id="@+id/detail_helper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/text_size_18"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/detail_helpers"
+        />
+
+  </android.support.design.internal.ForegroundLinearLayout>
+
+  <android.support.design.internal.ForegroundLinearLayout
+      android:id="@+id/container_help"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:layout_weight="1"
+      android:background="@android:color/white"
+      android:foreground="?attr/selectableItemBackground"
+      android:gravity="center"
+      android:orientation="vertical"
+      android:paddingBottom="@dimen/view_margin_8"
+      android:paddingTop="@dimen/view_margin_8"
+      >
+
+    <TextView
+        android:id="@+id/detail_help"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/text_size_18"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/detail_helps"
+        />
+
+  </android.support.design.internal.ForegroundLinearLayout>
+
+</LinearLayout>

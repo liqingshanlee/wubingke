@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.smartydroid.android.starter.kit.widget.ForegroundRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/ui_invite_contacts_container"
+    android:foreground="?attr/selectableItemBackground"
+    >
+  <TextView
+      android:layout_marginLeft="@dimen/view_margin_8"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/im_text_view_letter"
+      android:background="#ECECEC"/>
+
+  <com.facebook.drawee.view.SimpleDraweeView
+      android:layout_below="@+id/im_text_view_letter"
+      android:id="@+id/ui_view_letter"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:textSize="@dimen/text_size_16"
+      android:background="#ECECEC"
+      android:paddingTop="@dimen/view_margin_8"
+      android:paddingBottom="@dimen/view_margin_8"
+      android:paddingLeft="@dimen/view_margin_16"
+      />
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/ui_view_letter"
+    >
+  <com.facebook.drawee.view.SimpleDraweeView
+      android:id="@+id/im_simple_avatar"
+      android:layout_width="@dimen/simple_home_width"
+      android:layout_height="@dimen/simple_home_height"
+      android:layout_gravity="center_vertical"
+      android:paddingBottom="@dimen/view_margin_8"
+      android:paddingTop="@dimen/view_margin_8"
+      fresco:placeholderImage="@mipmap/ic_information_big"
+      fresco:placeholderImageScaleType="centerCrop"
+      fresco:roundAsCircle="true"
+      tools:ignore="RtlHardcoded"
+      android:paddingLeft="@dimen/view_margin_16"
+      android:paddingRight="@dimen/view_margin_24"
+      />
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/im_text_username"
+      android:layout_toRightOf="@+id/im_simple_avatar"
+      android:layout_marginLeft="@dimen/view_margin_16"
+      android:layout_marginTop="@dimen/view_margin_16"
+      android:paddingLeft="@dimen/view_margin_16"
+      android:paddingRight="@dimen/view_margin_24"/>
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/im_text_mobile"
+      android:layout_toRightOf="@+id/im_simple_avatar"
+      android:layout_marginLeft="@dimen/view_margin_16"
+      android:layout_below="@+id/im_text_username"
+      android:layout_marginTop="@dimen/view_margin_8"
+      android:paddingLeft="@dimen/view_margin_16"
+      android:paddingRight="@dimen/view_margin_24"/>
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/im_text_invite"
+      android:layout_alignParentEnd="true"
+      android:layout_centerVertical="true"
+      android:background="@drawable/shape_city_select_textview"
+      android:textColor="@color/colorPrimary"
+      android:padding="@dimen/view_margin_8"
+      android:layout_marginRight="@dimen/view_margin_24"/>
+
+</RelativeLayout>
+</com.smartydroid.android.starter.kit.widget.ForegroundRelativeLayout>

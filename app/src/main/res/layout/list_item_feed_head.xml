@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+  <tech.honc.android.apps.soldier.ui.widget.MyScrollview
+      xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:fresco="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_marginBottom="@dimen/comment_margin"
+      android:scrollbars="none"
+      >
+
+
+    <com.smartydroid.android.starter.kit.widget.ForegroundRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+      <LinearLayout
+          android:id="@+id/container_head"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/view_margin_4"
+          android:orientation="horizontal"
+          android:paddingLeft="@dimen/view_padding_8"
+          android:paddingRight="@dimen/view_padding_8"
+          >
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/dynamic_details_img"
+            android:layout_width="@dimen/simple_dynanic_width"
+            android:layout_height="@dimen/simple_dynanic_width"
+            android:paddingBottom="@dimen/view_margin_4"
+            android:paddingTop="@dimen/view_margin_4"
+            fresco:placeholderImage="@mipmap/ic_information"
+            fresco:placeholderImageScaleType="centerCrop"
+            fresco:roundAsCircle="true"
+            tools:ignore="RtlHardcoded"
+            />
+        <TextView
+            android:id="@+id/dynamic_details_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/view_padding_4"
+            android:textColor="@color/colorPrimary"
+            />
+
+        <ImageView
+            android:id="@+id/dynamic_details_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/view_padding_4"
+            android:contentDescription="@string/app_name"
+            />
+      </LinearLayout>
+      <TextView
+          android:id="@+id/dynamic_details_content"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/container_head"
+          android:paddingBottom="@dimen/view_padding_4"
+          android:paddingTop="@dimen/view_padding_4"
+          android:paddingLeft="@dimen/view_padding_8"
+          android:paddingRight="@dimen/view_padding_8"
+          />
+
+
+      <tech.honc.android.apps.soldier.ui.widget.PhotoCollectionView
+          android:id="@+id/dynamic_details_gv"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/dynamic_details_content"
+          android:paddingBottom="@dimen/view_padding_4"
+          android:paddingTop="@dimen/view_padding_4"
+          android:paddingLeft="@dimen/view_padding_8"
+          android:paddingRight="@dimen/view_padding_8"
+          />
+
+
+      <TextView
+          android:id="@+id/dynamic_details_time"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/dynamic_details_gv"
+          android:paddingTop="@dimen/view_margin_4"
+          android:paddingLeft="@dimen/view_padding_8"
+          android:paddingRight="@dimen/view_padding_8"
+          />
+      <View
+          android:id="@+id/line_head"
+          android:layout_width="match_parent"
+          android:layout_height="1px"
+          android:layout_below="@+id/dynamic_details_time"
+          android:layout_marginTop="@dimen/view_margin_8"
+          android:background="#d8d8d8"
+          />
+      <TextView
+          android:id="@+id/dynamic_details_praiseNum"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/line_head"
+          android:paddingBottom="@dimen/view_margin_8"
+          android:paddingTop="@dimen/view_margin_8"
+          android:background="#ECECEC"
+          android:paddingLeft="@dimen/view_padding_8"
+          android:paddingRight="@dimen/view_padding_8"
+          />
+
+      <android.support.v7.widget.RecyclerView
+          android:id="@+id/dynamic_details_likes"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/dynamic_details_praiseNum"
+          android:paddingLeft="@dimen/view_padding_8"
+          android:paddingRight="@dimen/view_padding_8"
+          />
+
+      <View
+          android:id="@+id/line_likes"
+          android:layout_width="match_parent"
+          android:layout_height="1px"
+          android:layout_below="@+id/dynamic_details_likes"
+          android:layout_marginTop="@dimen/view_padding_4"
+          android:background="#d8d8d8"
+          />
+
+      <TextView
+          android:id="@+id/dynamic_details_commentsNum"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/line_likes"
+          android:paddingBottom="@dimen/view_margin_8"
+          android:paddingTop="@dimen/view_margin_8"
+          android:background="#ECECEC"
+          android:paddingLeft="@dimen/view_padding_8"
+          android:paddingRight="@dimen/view_padding_8"
+          />
+
+      <android.support.v7.widget.RecyclerView
+          android:id="@+id/dynamic_details_comments"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/dynamic_details_commentsNum"
+          android:layout_marginBottom="@dimen/view_margin_24"
+          android:paddingLeft="@dimen/view_padding_8"
+          android:paddingRight="@dimen/view_padding_8"
+          />
+
+    </com.smartydroid.android.starter.kit.widget.ForegroundRelativeLayout>
+
+  </tech.honc.android.apps.soldier.ui.widget.MyScrollview>
+
+  <FrameLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      >
+
+    <LinearLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal"
+        >
+      <RelativeLayout
+          android:id="@+id/dynamic_details_comments_bt"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:paddingBottom="@dimen/view_margin_16"
+          android:paddingTop="@dimen/view_margin_16"
+          >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            tools:ignore="UselessParent"
+            >
+          <ImageView
+              android:layout_centerVertical="true"
+              android:id="@+id/sex_img"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:contentDescription="@string/about_ours"
+              android:src="@mipmap/ic_comments_white"
+              />
+          <TextView
+              android:id="@+id/dynamic_details_comments_tv"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_centerVertical="true"
+              android:layout_marginLeft="@dimen/view_margin_8"
+              android:layout_toRightOf="@id/sex_img"
+              android:text="评论"
+              android:textColor="@color/white"
+              tools:ignore="HardcodedText"
+              />
+        </RelativeLayout>
+      </RelativeLayout>
+
+      <View
+          android:layout_width="1px"
+          android:layout_height="match_parent"
+          android:background="#d8d8d8"
+          android:layout_marginTop="@dimen/view_padding_16"
+          android:layout_marginBottom="@dimen/view_padding_16"
+          />
+
+      <RelativeLayout
+          android:id="@+id/dynamic_details_praise_bt"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:paddingBottom="@dimen/view_margin_16"
+          android:paddingTop="@dimen/view_margin_16"
+          >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            tools:ignore="UselessParent"
+            >
+
+          <ImageView
+              android:id="@+id/msg_img"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:contentDescription="@string/about_ours"
+              android:src="@mipmap/ic_praise_white"
+              />
+          <TextView
+              android:id="@+id/dynamic_details_praise_tv"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_centerVertical="true"
+              android:layout_marginLeft="@dimen/view_margin_8"
+              android:layout_toRightOf="@id/msg_img"
+              android:text="点赞"
+              android:textColor="@color/white"
+              tools:ignore="HardcodedText"
+              />
+        </RelativeLayout>
+      </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/input_editText_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        >
+      <View
+          android:id="@+id/line"
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="#ECECEC"
+          />
+
+      <include
+          layout="@layout/include_input_edittext"
+          android:id="@+id/include_input"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          />
+    </RelativeLayout>
+  </FrameLayout>
+
+</RelativeLayout>

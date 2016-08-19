@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.smartydroid.android.starter.kit.widget.ForegroundRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/personal_help_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:foreground="?attr/selectableItemBackground"
+    >
+
+  <com.facebook.drawee.view.SimpleDraweeView
+      android:id="@+id/holder_personal_task_avatar"
+      android:layout_width="@dimen/simple_info"
+      android:layout_height="@dimen/simple_info"
+      android:layout_alignParentLeft="true"
+      android:layout_centerVertical="true"
+      android:paddingBottom="@dimen/view_margin_4"
+      android:paddingTop="@dimen/view_margin_4"
+      fresco:placeholderImage="@mipmap/ic_information"
+      fresco:placeholderImageScaleType="centerCrop"
+      fresco:roundAsCircle="true"
+      tools:ignore="RtlHardcoded"
+      />
+  <TextView
+      android:id="@+id/holder_personal_task_username"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/view_margin_16"
+      android:layout_toRightOf="@+id/holder_personal_task_avatar"
+      android:paddingLeft="@dimen/view_padding_16"
+      android:textColor="@color/colorPrimary"
+      android:textSize="@dimen/text_size_16"
+      />
+
+  <TextView
+      android:id="@+id/holder_personal_task_useful"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_toRightOf="@+id/holder_personal_task_username"
+      android:layout_marginTop="@dimen/view_margin_16"
+      android:padding="@dimen/view_margin_4"
+      android:layout_marginLeft="@dimen/view_padding_16"
+      android:background="#A8A8A8"
+      android:textColor="@color/white"
+      />
+
+  <TextView
+      android:id="@+id/holder_personal_task_comment"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/holder_personal_task_username"
+      android:layout_marginBottom="@dimen/view_padding_16"
+      android:layout_marginTop="@dimen/view_padding_8"
+      android:layout_toRightOf="@+id/holder_personal_task_avatar"
+      android:paddingLeft="@dimen/view_padding_16"
+      />
+
+  <TextView
+      android:id="@+id/holder_personal_task_time"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentRight="true"
+      android:layout_marginTop="@dimen/view_margin_16"
+      />
+
+  <ImageView
+      android:id="@+id/dynamic_comment_report"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentRight="true"
+      android:layout_below="@+id/holder_personal_task_time"
+      android:layout_centerVertical="true"
+      android:paddingRight="@dimen/activity_horizontal_margin"
+      android:paddingTop="@dimen/view_margin_24"
+      android:src="@mipmap/ic_report"
+      tools:ignore="RtlHardcoded"
+      />
+
+
+</com.smartydroid.android.starter.kit.widget.ForegroundRelativeLayout>

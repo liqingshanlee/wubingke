@@ -1,0 +1,198 @@
+<resources>
+  <string name="app_name">伍兵</string>
+
+
+  <!--MainActivity-->
+  <string name="tab_home">首页</string>
+  <string name="tab_message">消息</string>
+  <string name="tab_dynamic">发现</string>
+  <string name="tab_information">资讯</string>
+  <string name="tab_account">我的</string>
+  <!--HomeFragment-->
+  <string name="menu_filter">找战友</string>
+  <string name="prompt_fail">查询信息失败</string>
+  <string name="prompt_error">查询信息错误</string>
+
+  <!--DynamicFragment-->
+  <string name="menu_release">发布</string>
+  <string name="more">更多</string>
+  <string name="praise">赞</string>
+  <string name="comment">评论</string>
+
+  <!--InformationFragment-->
+  <string name="label_information">筛选</string>
+  <string name="user_name_number">请输入手机号</string>
+  <string name="user_password">请输入密码</string>
+  <string name="user_code">请输入验证码</string>
+  <string name="user_new_password">请输入新密码</string>
+  <string name="btn_login_ok">确定</string>
+  <string name="btn_login_login">登陆</string>
+  <string name="btn_forget_password">忘记密码</string>
+  <string name="btn_login_register">注册</string>
+
+  <string name="account_signature">个性签名</string>
+  <string name="account_albums">个人相册</string>
+  <string name="account_feeds">我的动态</string>
+  <string name="account_collections">我的收藏</string>
+  <string name="account_helps">我的求助</string>
+  <string name="account_invite">邀请战友</string>
+  <string name="account_certification">战友认证</string>
+  <string name="account_settings">设置</string>
+  <string name="account_actionbar_followers">粉丝</string>
+  <string name="account_actionbar_following">关注</string>
+  <string name="account_actionbar_helps">助人</string>
+
+  <!--FilterActivity-->
+  <string name="label_filter">找战友</string>
+
+  <!--filterSoldierFragment-->
+  <string name="please_choice">请选择</string>
+  <string name="please_input">请输入</string>
+  <string name="date_picker_title">请选择日期</string>
+  <string name="date_picker_ok">确定</string>
+  <string name="date_picker_cancel">取消</string>
+
+  <string name="input_username">请输入姓名</string>
+  <string name="menu_ok">确定</string>
+  <string name="dialog_ok">确定</string>
+  <string name="dialog_cancel">取消</string>
+
+  <!--soldierDetailFragment-->
+  <string name="label_detail">详情</string>
+  <string name="detail_photo">相册</string>
+  <string name="detail_dynamic">动态</string>
+  <string name="detail_signature">个性签名</string>
+  <string name="detail_information">基本信息</string>
+  <string name="detail_service">服役信息</string>
+  <string name="detail_service_area">服役地区 :</string>
+  <string name="detail_service_soldier_area">服役军区 :</string>
+  <string name="detail_service_time_go">入伍时间 :</string>
+  <string name="detail_service_time_back">退伍时间 :</string>
+  <string name="detail_name">姓名 :</string>
+  <string name="detail_age">年龄 :</string>
+  <string name="detail_username">昵称 :</string>
+  <string name="detail_sex">性别 :</string>
+  <string name="detail_area">所在地 :</string>
+  <string name="detail_educational">学历 :</string>
+  <string name="detail_height">身高 :</string>
+  <string name="detail_weight">体重 :</string>
+  <string name="detail_marry">婚姻状况 :</string>
+  <string name="detail_fans">粉丝</string>
+  <string name="detail_attentions">关注</string>
+  <string name="detail_helpers">助人</string>
+  <string name="detail_helps">求助</string>
+  <string name="Change_Password">修改密码</string>
+  <string name="feed_back">意见反馈</string>
+  <string name="about_ours">关于我们</string>
+  <string name="detail_attention">关注</string>
+  <string name="detail_add_friends">加好友</string>
+  <string name="detail_look_more"><u>查看更多</u></string>
+
+
+  <!--FilterMaleFragment-->
+  <string name="filter_soldier_area">军区</string>
+  <string name="filter_soldier_type">兵种</string>
+  <string name="filter_soldier_age">军龄</string>
+  <string name="filter_soldier_more">更多</string>
+
+
+  <!--ReleaseHelpActivity-->
+  <string name="release_content_hint">写下你想说的话...</string>
+  <string name="find_help">求助</string>
+  <string name="find_ordinary">普通动态</string>
+
+  <!--FilterFelmaleSoldierFragment-->
+  <string name="filter_work_title">工作</string>
+  <string name="filter_work_content">请输入</string>
+
+  <!--for test-->
+  <string name="content_description">Content Description</string>
+  <string name="placehold_short">Placehold</string>
+  <string name="placehold_long">Fugit assumenda est incidunt. Odio doloribus non consequatur itaque. Reiciendis et laborum non enim. </string>
+
+  <!--InformationFragment-->
+  <string name="article_type"> 类别: </string>
+  <string name="article_time"> 时间: </string>
+  <string name="article_star"> 赞</string>
+  <string name="article_comment"> 评论</string>
+  <!--DynamicDetailsActivity-->
+  <string name="Details">详情</string>
+  <string name="details_inform">举报</string>
+  <string name="details_shield">拉黑</string>
+
+  <!--CitySelectActivity-->
+  <string name="label_city">城市定位</string>
+  <string name="locating">正在定位中...</string>
+
+  <!--InformationDetailFragment-->
+  <string name="label_info_detail">资讯详情</string>
+  <string name="menu_save">保存</string>
+
+  <!--PhotoBrowserActivity-->
+  <string name="label_photo">查看大图</string>
+
+  <!--PersonalPhotoGallery-->
+  <string name="label_gallery">我的相册</string>
+  <!--PersonalTaskActivity-->
+  <string name="label_personal_help">我的求助</string>
+  <!--PersonalCollectionActivity-->
+  <string name="label_collections">我的收藏</string>
+  <string name="menu_feedbaack">提交</string>
+
+  <!--PhotoBDActivity-->
+  <string name="menu_delete">删除</string>
+  <!--PersonalTaskDetailActivity-->
+  <string name="label_task_personal">求助详情</string>
+
+  <string name="label_other_fans">粉丝</string>
+  <string name="label_other_focus">关注</string>
+  <string name="label_other_help">求助</string>
+  <string name="label_other_helper">助人</string>
+  <string name="input_edit">输入评论内容···</string>
+  <string name="input_send">发送</string>
+  <string name="im_msg_forward">转发</string>
+  <string name="im_msg_delete">删除</string>
+  <string name="im_msg_copy">复制</string>
+  <string name="mark_all_read">全部已读</string>
+  <string name="release_help_address">求助地点</string>
+  <string name="release_help_time">求助时间</string>
+  <string name="release_help_end_time">截止时间</string>
+  <string name="photo_show_more">查看更多</string>
+  <string name="action_create_tribe">创建群</string>
+  <string name="label_im_search">搜索</string>
+  <string name="im_search">搜索</string>
+  <string name="label_invite">邀请</string>
+  <string name="menu_finish">完成</string>
+  <string name="label_add_member">添加群成员</string>
+
+  <string-array name="im_contact_menu">
+    <item name="im_contact_menu_del">删除好友</item>
+    <item name="im_contact_menu_edit_nick_name">修改备注</item>
+  </string-array>
+
+  <string-array name="msg_long_click_untop">
+    <item>取消置顶</item>
+    <item>删除该会话</item>
+  </string-array>
+
+  <string-array name="msg_long_click_top">
+    <item>置顶该会话</item>
+    <item>删除该会话</item>
+  </string-array>
+
+  <string name="support_im_contacts_group">群聊</string>
+  <string name="support_im_contacts_total">%1$d位联系人</string>
+  <string name="support_im_contacts_new_contact">新的朋友</string>
+  <string name="label_use_terms">使用规范</string>
+  <string name="about_our_head">伍兵APP是专注于为复转军人创业就业提供服务的平台。主要为复转军人提供创业就业，就业，社交，生活等服务。由复转军人和各行业精英共同打造。</string>
+  <string name="about_our_body">伍兵集团（四川伍兵贸易有限公司）由2014年2月27日正式成立。公司用互联网理念的新型商业模式，致力于打造中国以服务复转军人为主导，由复转军人经营管理的多元化集团公司。</string>
+  <string name="certification_pro">请上传你的退役军人证照片</string>
+  <string name="certification_sure">确  定</string>
+  <string name="label_certification">战友认证</string>
+  <string name="certification_information">认证信息</string>
+  <string name="reason_report">举报理由</string>
+  <string name="reason_rubbish">垃圾广告信息</string>
+  <string name="reason_unfriendly">不友善内容</string>
+  <string name="reason_violation_law">违反法律法规的内容</string>
+  <string name="reason_politically_sensitive">政治敏感</string>
+</resources>

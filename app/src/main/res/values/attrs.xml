@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <!--filter-->
+  <string-array name="soldier_area">
+    <item>军区</item>
+    <item>沈阳军区</item>
+    <item>兰州军区</item>
+    <item>北京军区</item>
+    <item>成都军区</item>
+    <item>济南军区</item>
+    <item>广州军区</item>
+  </string-array>
+  <string-array name="soldier_types">
+    <item>不限</item>
+    <item>通信兵</item>
+    <item>宪兵</item>
+    <item>化学兵</item>
+    <item>军事情报兵</item>
+    <item>电子对抗兵</item>
+    <item>工程兵</item>
+    <item>电子对抗部队</item>
+  </string-array>
+
+  <string-array name="soldier_age">
+    <item>1年</item>
+    <item>2年</item>
+    <item>3年</item>
+    <item>4年</item>
+    <item>5年</item>
+    <item>5-10年</item>
+    <item>10-20年</item>
+  </string-array>
+
+  <string-array name="soldier_more">
+    <item>更多</item>
+  </string-array>
+  <!--filter-->
+  <string-array name="sex">
+    <item>男</item>
+    <item>女</item>
+  </string-array>
+
+  <string-array name="grade">
+    <item>小学</item>
+    <item>中学</item>
+    <item>专科</item>
+    <item>本科</item>
+    <item>硕士</item>
+    <item>博士</item>
+  </string-array>
+
+  <string-array name="marry">
+    <item>已婚</item>
+    <item>未婚</item>
+  </string-array>
+
+  <string-array name="age">
+    <item>18-23</item>
+    <item>23-26</item>
+    <item>26-31</item>
+    <item>36-41</item>
+    <item>41-56</item>
+  </string-array>
+
+  <string-array name="height">
+    <item>160-165</item>
+    <item>165-170</item>
+    <item>170-175</item>
+    <item>175-180</item>
+    <item>180-185</item>
+    <item>185-190</item>
+  </string-array>
+
+  <string-array name="weight">
+    <item>45-50</item>
+    <item>50-55</item>
+    <item>55-60</item>
+    <item>60-65</item>
+    <item>65-70</item>
+    <item>70-75</item>
+  </string-array>
+
+  <string-array name="delete_image">
+    <item>删除</item>
+    <item>取消</item>
+  </string-array>
+
+  <string-array name="report">
+    <item>垃圾广告信息</item>
+    <item>不友善内容</item>
+    <item>违反法律法规的内容</item>
+    <item>政治敏感</item>
+  </string-array>
+</resources>

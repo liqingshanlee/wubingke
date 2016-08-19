@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:tools="http://schemas.android.com/tools"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="@dimen/view_margin_8"
+		android:layout_marginTop="@dimen/view_margin_8"
+		android:background="?android:attr/selectableItemBackground"
+		android:gravity="center"
+		android:orientation="vertical"
+		tools:ignore="UselessParent">
+
+	<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:paddingLeft="@dimen/view_padding_20"
+			android:paddingStart="@dimen/view_padding_20"
+			android:text="已定位城市"
+			android:textSize="16sp"
+			tools:ignore="RtlSymmetry"/>
+
+	<TextView
+			android:id="@+id/locations_city"
+			android:layout_width="100dp"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:layout_marginLeft="20dp"
+			android:layout_marginRight="20dp"
+			android:layout_marginTop="@dimen/view_margin_8"
+			android:background="@drawable/shape_city_select_textview"
+			android:gravity="center"
+			android:paddingBottom="@dimen/view_padding_8"
+			android:paddingTop="@dimen/view_padding_8"
+			android:text="@string/locating"
+			android:textColor="@color/colorPrimary"
+			android:textSize="16sp"
+	/>
+
+</LinearLayout>

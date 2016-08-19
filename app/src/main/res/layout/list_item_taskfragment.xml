@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.smartydroid.android.starter.kit.widget.ForegroundRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:foreground="?attr/selectableItemBackground"
+    >
+
+
+  <tech.honc.android.apps.soldier.ui.widget.MyScrollview
+      xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:fresco="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      android:id="@+id/scroll_view"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="@dimen/comment_margin"
+      android:scrollbars="none"
+      >
+
+
+    <com.smartydroid.android.starter.kit.widget.ForegroundRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+      <LinearLayout
+          android:id="@+id/task_container_head"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/view_margin_4"
+          android:orientation="horizontal"
+          android:paddingLeft="8dp"
+          android:paddingRight="8dp"
+          >
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/task_details_img"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:paddingBottom="@dimen/view_margin_4"
+            android:paddingTop="@dimen/view_margin_4"
+            fresco:placeholderImage="@mipmap/ic_information"
+            fresco:placeholderImageScaleType="centerCrop"
+            fresco:roundAsCircle="true"
+            tools:ignore="RtlHardcoded"
+            />
+        <TextView
+            android:id="@+id/task_details_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/colorPrimary"
+            />
+
+        <ImageView
+            android:id="@+id/task_details_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:contentDescription="@string/app_name"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+          <ImageView
+              android:id="@+id/task_status"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentRight="true"
+              android:layout_centerVertical="true"
+              android:layout_gravity="center_vertical"
+              android:layout_marginRight="5dp"
+              android:contentDescription="@string/about_ours"
+              />
+        </RelativeLayout>
+
+      </LinearLayout>
+      <TextView
+          android:id="@+id/task_details_content"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/task_container_head"
+          android:paddingBottom="@dimen/view_padding_4"
+          android:paddingLeft="8dp"
+          android:paddingRight="8dp"
+          android:paddingTop="@dimen/view_padding_4"
+          />
+
+
+      <tech.honc.android.apps.soldier.ui.widget.PhotoCollectionView
+          android:id="@+id/task_details_gv"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/task_details_content"
+          android:paddingBottom="@dimen/view_padding_4"
+          android:paddingLeft="8dp"
+          android:paddingRight="8dp"
+          android:paddingTop="@dimen/view_padding_4"
+          />
+
+
+      <TextView
+          android:id="@+id/task_details_time"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/task_details_gv"
+          android:layout_marginBottom="@dimen/view_padding_4"
+          android:layout_marginTop="@dimen/view_margin_4"
+          android:paddingLeft="8dp"
+          android:paddingRight="8dp"
+          />
+
+      <TextView
+          android:id="@+id/dynamic_task_location"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/task_details_time"
+          android:layout_gravity="center_vertical"
+          android:drawableLeft="@mipmap/ic_location"
+          android:drawablePadding="@dimen/view_padding_8"
+          android:paddingBottom="@dimen/view_margin_8"
+          android:paddingLeft="8dp"
+          android:paddingRight="8dp"
+          android:singleLine="false"
+          android:textColor="#4d9cf6"
+          android:textSize="@dimen/text_size_12"
+          />
+
+      <View
+          android:id="@+id/task_line_head"
+          android:layout_width="match_parent"
+          android:layout_height="1px"
+          android:layout_below="@+id/dynamic_task_location"
+          android:background="#d8d8d8"
+          android:paddingTop="@dimen/view_margin_4"
+          />
+
+      <TextView
+          android:id="@+id/task_details_commentsNum"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/task_line_head"
+          android:background="#ECECEC"
+          android:paddingBottom="@dimen/view_margin_8"
+          android:paddingLeft="8dp"
+          android:paddingRight="8dp"
+          android:paddingTop="@dimen/view_margin_8"
+          />
+
+      <android.support.v7.widget.RecyclerView
+          android:id="@+id/task_details_comments"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/task_details_commentsNum"
+          android:layout_marginBottom="50dp"
+          android:paddingLeft="8dp"
+          android:paddingRight="8dp"
+          />
+
+    </com.smartydroid.android.starter.kit.widget.ForegroundRelativeLayout>
+
+  </tech.honc.android.apps.soldier.ui.widget.MyScrollview>
+
+  <FrameLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      >
+    <ImageView
+        android:id="@+id/task_help_image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="@string/about_ours"
+        android:src="@mipmap/ic_help_image"
+        />
+    <RelativeLayout
+        android:id="@+id/task_input_editText_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        >
+      <View
+          android:id="@+id/line"
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:layout_alignParentTop="true"
+          android:background="#ECECEC"
+          />
+
+      <include
+          layout="@layout/include_input_edittext"
+          android:id="@+id/include_input"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/line"
+          />
+    </RelativeLayout>
+  </FrameLayout>
+
+</com.smartydroid.android.starter.kit.widget.ForegroundRelativeLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="290dp"
+    android:layout_height="270dp"
+    android:background="#00000000"
+    >
+  <ImageView
+      android:layout_width="290dp"
+      android:layout_height="250dp"
+      android:scaleType="fitCenter"
+      android:src="@drawable/bg_bing"
+      />
+  <RelativeLayout
+      android:id="@+id/rl"
+      android:layout_width="30dp"
+      android:layout_height="30dp"
+      android:layout_alignParentRight="true"
+      android:layout_alignParentTop="true"
+      >
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerInParent="true"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_delete_xx"
+        />
+  </RelativeLayout>
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      >
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:background="@color/colorPrimaryDark"
+        android:paddingBottom="5dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="5dp"
+        android:text="普通动态"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_16"
+        />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="15dp"
+        android:layout_toRightOf="@id/btn1"
+        android:background="@color/colorPrimaryDark"
+        android:paddingBottom="5dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="5dp"
+        android:text="求助"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_16"
+        />
+  </RelativeLayout>
+
+
+</RelativeLayout>
